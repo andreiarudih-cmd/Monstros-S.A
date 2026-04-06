@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Interativo - Clarisse 3 Anos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="energy-screen">
+        <div class="content">
+            <h2 class="title-main">ATENÇÃO, MONSTRINHOS!</h2>
+            <p class="instruction">A central de energia está sem carga...<br>Precisamos de um grito poderoso para abrir o portal da festa da Clarisse!</p>
+
+            <div class="cylinder-container">
+                <div class="cylinder-cap"></div>
+                <div id="energy-liquid"></div>
+                <div class="cylinder-glass"></div>
+            </div>
+
+            <p id="feedback-msg">Clique no botão para ativar os sensores</p>
+            <button id="mic-btn">ATIVAR MICROFONE</button>
+        </div>
+    </section>
+
+    <main id="main-content" class="hidden">
+        <div class="invite-container">
+            <div class="image-wrapper">
+                <img src="convite.png" alt="Convite Monstros SA" class="base-image">
+
+                <div class="overlay name">Clarisse</div>
+                <div class="overlay age">3 anos</div>
+                <div class="overlay date">20<br>maio</div>
+                <div class="overlay time">19:00</div>
+                <div class="overlay address">
+                    Rua Santinho Gianasi<br>
+                    Vila Conceição – Ribeirão Pires
+                </div>
+            </div>
+        </div>
+
+        <section class="rsvp-section">
+            <h3 class="rsvp-title">Confirme sua presença</h3>
+            <form id="rsvp-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Seu Nome Completo" required>
+                </div>
+                <div class="input-group">
+                    <select required>
+                        <option value="" disabled selected>Vai comparecer?</option>
+                        <option value="sim">Sim, estarei lá!</option>
+                        <option value="nao">Infelizmente não poderei</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="number" placeholder="Nº de acompanhantes" min="0">
+                </div>
+                <button type="submit" class="confirm-btn">CONFIRMAR PRESENÇA</button>
+            </form>
+            <p class="final-quote">Sua presença vai deixar essa festa ainda mais especial!</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
